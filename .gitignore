@@ -1,0 +1,25 @@
+# Private instances must stay outside version control.
+local/
+private/
+personal/
+exports/
+backups/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.zip
+*.tar.gz
+
+# .gitignore does not remove files already committed.
