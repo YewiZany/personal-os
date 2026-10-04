@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1
+
+- Make public Notion template duplication the primary onboarding path in both READMEs.
+- Explain the Duplicate icon, copying all three databases, private copies and relation checks.
+- Retain complete manual setup as a fallback; no repository download or server deployment is needed.
+- Clarify that the protocol does not require ChatGPT Plus and integrations have separate access requirements.
+
 ## v0.1.0
 
 First experimental release:

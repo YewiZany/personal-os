@@ -4,7 +4,15 @@
 
 Use one **private** top-level page named Personal OS and three databases inside it. There is no required public template URL. Do not publish the page where you operate your actual life.
 
-## 1. Create three databases
+## 1. Duplicate the template (recommended)
+
+Open the [Personal OS reference template](https://even-cart-00d.notion.site/Personal-OS-Template-v0-1-0-3efb90dbc5af818ebb51c759cbb01750) and select **Duplicate** in the upper right: the icon looks like two overlapping squares. If asked, sign into Notion, then choose your workspace. All three databases, their properties, fictional records, Minimal Prompt and a blank User Profile are included. No repository download or server deployment is required.
+
+Keep your copy private. Open Projects, Daily and Inbox; check that Daily's Main Project and Inbox's Related Project point to Projects inside your copy. If a database shows “No access,” or a relation points outside your copy, use the schema below to repair it before entering personal data. The public page and Duplicate entry have been checked without signing in; duplicating into a second workspace has not been tested.
+
+Continue at [Add only enough state to start](#2-add-only-enough-state-to-start). If the template is unavailable or you prefer building your own structure, follow the manual route below. Notion documents duplication in [Duplicate public pages](https://www.notion.com/help/duplicate-public-pages).
+
+### Manual fallback: create three databases
 
 Create a full-page table database under the private page for each of Projects, Daily and Inbox. Rename each default title property first, then add the properties below. Keep these exact names so the prompt and records agree.
 
@@ -88,19 +96,14 @@ Then say:
 
 Stop configuring once that action is clear.
 
-## If using a public duplicate later
-
-A public duplication link is intentionally absent from v0.1.0. If a verified one is added later, sign into Notion, open it, select Duplicate, and choose your workspace. Then verify that Main Project and Related Project point to Projects in the duplicated copy, and that all database pages open without “No access.” Replace the fictional records and keep your working copy private.
-
-Notion documents the process in [Duplicate public pages](https://www.notion.com/help/duplicate-public-pages).
-
 ## 中文快速搭建
 
-1. 新建一个私有 Personal OS 页面，在里面创建 Projects、Daily、Inbox 三个完整表格数据库。
-2. 按上方三张字段表创建属性。Title 是标题，Text 是文本，Select 是单选，Relation 是关联；Last edited time 和 Created time 是自动字段。
-3. 先建 Projects，再让 Daily 的 Main Project、Inbox 的 Related Project 关联**自己的 Projects**。
-4. Projects 先只放一个真实项目，写明确的 Next Action；Daily 新建今天，Closed 保持未勾选。正文粘贴[个人记录模板](daily-entry.md)。
-5. 在 AI 客户端连接 Notion，验证能读、能写。不能连接就粘贴相关记录，手动保存返回的更新。
-6. 复制 Prompt，填写私有 User Profile，开始 Boot。开始第一动作后，停止装修系统。
+1. 打开[公开模板](https://even-cart-00d.notion.site/Personal-OS-Template-v0-1-0-3efb90dbc5af818ebb51c759cbb01750)，点击右上角两个重叠方框的 Duplicate / 复制按钮，登录后选择自己的工作区。三库、字段和虚构示例会一并复制。
+2. 保持自己的副本私有，检查 Daily 的 Main Project、Inbox 的 Related Project 关联**副本里的 Projects**，三库都能打开。
+3. Projects 先只放一个真实项目，写明确的 Next Action；Daily 新建今天，Closed 保持未勾选。正文粘贴[个人记录模板](daily-entry.md)。
+4. 在 AI 客户端连接自己的 Notion，验证能读、能写。不能连接就粘贴相关记录，手动保存返回的更新。
+5. 从模板下方或仓库复制 Prompt，填写私有 User Profile，开始 Boot。开始第一动作后，停止装修系统。
+
+如果模板打不开：新建私有 Personal OS 页面，按上方三张字段表建立 Projects、Daily、Inbox。Title 是标题，Text 是文本，Select 是单选，Relation 是关联；Last edited time 和 Created time 是自动字段。先建 Projects，再配置其余两库的关联。
 
 当天完成单项任务，在个人记录里写结果。整天结束时填 Actual Output、Friction、Tomorrow First Move，更新项目 Next Action，再勾 Closed。日内记录一次即可，不需要同时抄到会话。

@@ -16,7 +16,7 @@ Create a fresh template page and new databases. Use fictional records. Relations
 
 Publishing a Notion page also publishes its descendants by default. Notion states that contributor names, profile photos and email addresses can appear in the published page's metadata. Use an identity intended for public attribution, inspect every descendant and relation, and review the public version before sharing it. See [Notion's publishing guidance](https://www.notion.com/help/public-pages-and-web-publishing).
 
-v0.1.0 includes no live Notion duplication link. Its manual setup path remains usable. This avoids making onboarding depend on an unverified publication or embedding workspace-specific identifiers in the repository.
+v0.1.1 links to the standalone public reference template supplied by its maintainer. That public URL is intentional; private instance links and identifiers must stay out of the repository. The template's public content and Duplicate entry were checked without signing in. This is not a guarantee about contributor metadata or a completed duplicate in another workspace. The manual setup path remains usable if the template disappears.
 
 ## Before a public commit
 

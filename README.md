@@ -2,7 +2,7 @@
 
 **An AI-native personal execution system. AI reduces friction, not agency.**
 
-[简体中文](README.zh-CN.md) · **v0.1.0 — experimental** · [MIT License](LICENSE)
+[简体中文](README.zh-CN.md) · **v0.1.1 — experimental** · [MIT License](LICENSE)
 
 Turn an intention into a concrete result, then leave a clear first move for tomorrow. Personal OS combines an AI work conversation with three persistent records: **Projects, Daily and Inbox**.
 
@@ -45,13 +45,17 @@ AI can organize information and handle repetitive execution. The user keeps resp
 
 This is an onboarding target, not a measured promise. Account creation, connector approval or workplace restrictions can take longer.
 
-1. **Create your private memory, about 6 minutes.** Follow [Notion setup](notion/setup.md) to create Projects, Daily and Inbox under one private page. A verified public duplication link is not included in v0.1.0; the manual route is complete and independent of any template link.
+1. **Duplicate the template, about 2 minutes.** Open the [Personal OS Notion template](https://even-cart-00d.notion.site/Personal-OS-Template-v0-1-0-3efb90dbc5af818ebb51c759cbb01750), select **Duplicate** in the upper right (the overlapping-squares icon), sign into Notion, and choose your workspace. Projects, Daily, Inbox and the fictional examples copy together; you do not need to create each property. Keep your copy private and check that both relation properties target Projects in your copy. If the template is unavailable, use [manual setup](notion/setup.md).
 2. **Connect Notion, about 2 minutes.** Enable an available Notion app, plugin or connector in your AI client and authorize your copy. Ask it to verify read and write access. A connection may be read-only. If unavailable, use the manual handoff described in setup; do not spend the session debugging integration.
 3. **Copy a prompt, about 1 minute.** Start with [Minimal](prompts/minimal.md), or use the [Core Prompt](prompts/personal-os.md). Paste it into a dedicated AI work conversation.
 4. **Fill your private profile, about 3 minutes.** Copy [User Profile](prompts/user-profile.md) outside the public repository or into an ignored local folder. Fill only what changes today's decisions. Give the profile to your work conversation.
 5. **Run your first Boot, about 3 minutes.** Add one project with a concrete Next Action. Tell the AI your energy, unavoidable obligations and desired result. Ask it to read your records, choose one Main Outcome and give you the first action.
 
 You have started when **one action is underway**, not when every field is perfect.
+
+No repository download, code execution or server deployment is required. The template provides the record structure; you still connect your own Notion, copy a prompt and supply your own context. The template also includes Minimal and a blank User Profile to copy directly.
+
+The protocol does not require ChatGPT Plus; use an AI conversation that can accept these instructions. Automatic Notion reads and writes depend on the client, plan and permissions. If no suitable connection is available, use manual handoff without upgrading a plan just to start.
 
 ## Daily use
 
@@ -69,7 +73,7 @@ You can report results in the conversation **or** the Daily page's Personal Note
 
 The protocol needs three durable states, not a particular SaaS. A private document with Projects, Daily and Inbox sections is enough for a manual first run.
 
-Notion is the current reference implementation. Obsidian, Markdown, SQLite, Apple Notes or another database could hold the same states. v0.1.0 provides no adapters for them. Paste the relevant state into your AI conversation and save the returned updates yourself.
+Notion is the current reference implementation. Obsidian, Markdown, SQLite, Apple Notes or another database could hold the same states. v0.1 provides no adapters for them. Paste the relevant state into your AI conversation and save the returned updates yourself.
 
 ## Read next
 
@@ -99,4 +103,4 @@ personal-os/
 └── examples/      fictional day and project
 ~~~
 
-The next useful improvement is to observe a few first-time users trying the setup, then fix the steps that prevent their first action. See [Contributing](CONTRIBUTING.md).
+This completes the v0.1 deliverable. Future onboarding changes can follow actual feedback; recruiting testers and promotion are not prerequisites for use. See [Contributing](CONTRIBUTING.md).
